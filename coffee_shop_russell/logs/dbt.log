@@ -1,0 +1,258 @@
+
+
+============================== 2023-01-09 16:34:58.254117 | f219fce4-b014-4a51-8686-6cdd017e7e5b ==============================
+[0m16:34:58.254154 [info ] [MainThread]: Running with dbt=1.3.2
+[0m16:34:58.255423 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/vscode/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m16:34:58.255859 [debug] [MainThread]: Tracking: tracking
+[0m16:34:58.265776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f77522d89a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f77522d8a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f77522d8a30>]}
+[0m16:34:58.289244 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+[0m16:34:58.290695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f219fce4-b014-4a51-8686-6cdd017e7e5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f77522f8a90>]}
+[0m16:34:58.324841 [debug] [MainThread]: Parsing macros/etc.sql
+[0m16:34:58.328453 [debug] [MainThread]: Parsing macros/adapters.sql
+[0m16:34:58.350821 [debug] [MainThread]: Parsing macros/catalog.sql
+[0m16:34:58.357411 [debug] [MainThread]: Parsing macros/utils/array_append.sql
+[0m16:34:58.358221 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m16:34:58.359031 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m16:34:58.360483 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m16:34:58.361220 [debug] [MainThread]: Parsing macros/utils/array_concat.sql
+[0m16:34:58.361908 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m16:34:58.362539 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m16:34:58.363213 [debug] [MainThread]: Parsing macros/utils/timestamps.sql
+[0m16:34:58.364460 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+[0m16:34:58.365442 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m16:34:58.366256 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m16:34:58.366820 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m16:34:58.367495 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m16:34:58.368204 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m16:34:58.369680 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m16:34:58.370225 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m16:34:58.371511 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m16:34:58.372216 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m16:34:58.374920 [debug] [MainThread]: Parsing macros/materializations/table.sql
+[0m16:34:58.382149 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+[0m16:34:58.384857 [debug] [MainThread]: Parsing macros/materializations/view.sql
+[0m16:34:58.387744 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+[0m16:34:58.389510 [debug] [MainThread]: Parsing macros/materializations/copy.sql
+[0m16:34:58.392567 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+[0m16:34:58.410150 [debug] [MainThread]: Parsing macros/python_model/python.sql
+[0m16:34:58.417229 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+[0m16:34:58.424080 [debug] [MainThread]: Parsing macros/utils/array_append.sql
+[0m16:34:58.425313 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m16:34:58.426746 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m16:34:58.428935 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m16:34:58.430147 [debug] [MainThread]: Parsing macros/utils/replace.sql
+[0m16:34:58.431538 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m16:34:58.433567 [debug] [MainThread]: Parsing macros/utils/array_concat.sql
+[0m16:34:58.434807 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m16:34:58.436293 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+[0m16:34:58.438086 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m16:34:58.439339 [debug] [MainThread]: Parsing macros/utils/concat.sql
+[0m16:34:58.440581 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+[0m16:34:58.442218 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m16:34:58.443481 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m16:34:58.444475 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m16:34:58.445729 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m16:34:58.447233 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m16:34:58.448632 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m16:34:58.449736 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m16:34:58.450890 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m16:34:58.453290 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m16:34:58.454573 [debug] [MainThread]: Parsing macros/utils/literal.sql
+[0m16:34:58.455747 [debug] [MainThread]: Parsing macros/utils/length.sql
+[0m16:34:58.456871 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+[0m16:34:58.458587 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+[0m16:34:58.461173 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+[0m16:34:58.462810 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+[0m16:34:58.464934 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+[0m16:34:58.467367 [debug] [MainThread]: Parsing macros/adapters/timestamps.sql
+[0m16:34:58.470857 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m16:34:58.484457 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+[0m16:34:58.498904 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+[0m16:34:58.508426 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+[0m16:34:58.511246 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+[0m16:34:58.515877 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+[0m16:34:58.523119 [debug] [MainThread]: Parsing macros/etc/statement.sql
+[0m16:34:58.528353 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+[0m16:34:58.536734 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+[0m16:34:58.543141 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+[0m16:34:58.545703 [debug] [MainThread]: Parsing macros/materializations/models/incremental/strategies.sql
+[0m16:34:58.552975 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+[0m16:34:58.569015 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+[0m16:34:58.589275 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+[0m16:34:58.618453 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+[0m16:34:58.632066 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+[0m16:34:58.635200 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+[0m16:34:58.640413 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+[0m16:34:58.647611 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+[0m16:34:58.651195 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+[0m16:34:58.652613 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+[0m16:34:58.658168 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+[0m16:34:58.661774 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+[0m16:34:58.666373 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+[0m16:34:58.668314 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+[0m16:34:58.670165 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+[0m16:34:58.686022 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+[0m16:34:58.687824 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+[0m16:34:58.699368 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+[0m16:34:58.712131 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+[0m16:34:58.719266 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+[0m16:34:58.737159 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+[0m16:34:58.738147 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+[0m16:34:58.739826 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+[0m16:34:58.740840 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+[0m16:34:58.741869 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+[0m16:34:59.050797 [debug] [MainThread]: 1699: static parser successfully parsed customers.sql
+[0m16:34:59.064435 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m16:34:59.067634 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m16:34:59.208344 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.coffee_shop_russell.example
+
+[0m16:34:59.215516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f219fce4-b014-4a51-8686-6cdd017e7e5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f77522198b0>]}
+[0m16:34:59.223374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f219fce4-b014-4a51-8686-6cdd017e7e5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f77522f80a0>]}
+[0m16:34:59.223733 [info ] [MainThread]: Found 3 models, 4 tests, 0 snapshots, 0 analyses, 319 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m16:34:59.224118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f219fce4-b014-4a51-8686-6cdd017e7e5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7751d6a610>]}
+[0m16:34:59.225676 [info ] [MainThread]: 
+[0m16:34:59.227316 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m16:34:59.229200 [debug] [ThreadPool]: Acquiring new bigquery connection "list_aec-students"
+[0m16:34:59.229609 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:35:00.475313 [debug] [ThreadPool]: Acquiring new bigquery connection "create_aec-students_dbt_russell"
+[0m16:35:00.476160 [debug] [ThreadPool]: Acquiring new bigquery connection "create_aec-students_dbt_russell"
+[0m16:35:00.476613 [debug] [ThreadPool]: Creating schema "_ReferenceKey(database='aec-students', schema='dbt_russell', identifier=None)"
+[0m16:35:00.488802 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:35:00.489141 [debug] [ThreadPool]: On create_aec-students_dbt_russell: /* {"app": "dbt", "dbt_version": "1.3.2", "profile_name": "coffee_shop_russell", "target_name": "dev", "connection_name": "create_aec-students_dbt_russell"} */
+create schema if not exists `aec-students`.`dbt_russell`
+  
+[0m16:35:01.677271 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:f45b1017-10ff-46ec-a9ca-9233f4b9914a:US&page=queryresults
+[0m16:35:01.680513 [debug] [ThreadPool]: Acquiring new bigquery connection "list_aec-students_dbt_russell"
+[0m16:35:01.680974 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:35:01.821377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f219fce4-b014-4a51-8686-6cdd017e7e5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f775221d6d0>]}
+[0m16:35:01.822919 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m16:35:01.823984 [info ] [MainThread]: 
+[0m16:35:01.832033 [debug] [Thread-1  ]: Began running node model.coffee_shop.customers
+[0m16:35:01.832276 [debug] [Thread-2  ]: Began running node model.coffee_shop.my_first_dbt_model
+[0m16:35:01.833677 [info ] [Thread-1  ]: 1 of 3 START sql view model dbt_russell.customers .............................. [RUN]
+[0m16:35:01.834453 [info ] [Thread-2  ]: 2 of 3 START sql table model dbt_russell.my_first_dbt_model .................... [RUN]
+[0m16:35:01.836381 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.coffee_shop.customers"
+[0m16:35:01.836991 [debug] [Thread-1  ]: Began compiling node model.coffee_shop.customers
+[0m16:35:01.838280 [debug] [Thread-2  ]: Acquiring new bigquery connection "model.coffee_shop.my_first_dbt_model"
+[0m16:35:01.838629 [debug] [Thread-1  ]: Compiling model.coffee_shop.customers
+[0m16:35:01.838912 [debug] [Thread-2  ]: Began compiling node model.coffee_shop.my_first_dbt_model
+[0m16:35:01.841532 [debug] [Thread-1  ]: Writing injected SQL for node "model.coffee_shop.customers"
+[0m16:35:01.841837 [debug] [Thread-2  ]: Compiling model.coffee_shop.my_first_dbt_model
+[0m16:35:01.842565 [debug] [Thread-1  ]: finished collecting timing info
+[0m16:35:01.845886 [debug] [Thread-2  ]: Writing injected SQL for node "model.coffee_shop.my_first_dbt_model"
+[0m16:35:01.846204 [debug] [Thread-1  ]: Began executing node model.coffee_shop.customers
+[0m16:35:01.872433 [debug] [Thread-2  ]: finished collecting timing info
+[0m16:35:01.876500 [debug] [Thread-1  ]: Writing runtime sql for node "model.coffee_shop.customers"
+[0m16:35:01.876919 [debug] [Thread-2  ]: Began executing node model.coffee_shop.my_first_dbt_model
+[0m16:35:01.906924 [debug] [Thread-2  ]: Writing runtime sql for node "model.coffee_shop.my_first_dbt_model"
+[0m16:35:01.907420 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m16:35:01.908614 [debug] [Thread-1  ]: On model.coffee_shop.customers: /* {"app": "dbt", "dbt_version": "1.3.2", "profile_name": "coffee_shop_russell", "target_name": "dev", "node_id": "model.coffee_shop.customers"} */
+
+
+  create or replace view `aec-students`.`dbt_russell`.`customers`
+  OPTIONS()
+  as SELECT
+  customers.id AS customer_id,
+  customers.name,
+  customers.email,
+  MIN(orders.created_at) AS first_order_at,
+  SUM(CASE WHEN orders.created_at IS NOT NULL THEN 1 ELSE 0 END) as number_of_orders
+FROM `analytics-engineers-club.coffee_shop.customers` customers
+LEFT JOIN `analytics-engineers-club.coffee_shop.orders` orders
+ON customers.id = orders.customer_id
+GROUP BY 1,2,3
+order by first_order_at
+limit 5;
+
+
+[0m16:35:01.911238 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m16:35:01.911641 [debug] [Thread-2  ]: On model.coffee_shop.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.3.2", "profile_name": "coffee_shop_russell", "target_name": "dev", "node_id": "model.coffee_shop.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `aec-students`.`dbt_russell`.`my_first_dbt_model`
+    
+    
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m16:35:03.066200 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:dd603e8a-4f30-40e8-b180-cd81b698bc0b:US&page=queryresults
+[0m16:35:03.085721 [debug] [Thread-1  ]: finished collecting timing info
+[0m16:35:03.088752 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f219fce4-b014-4a51-8686-6cdd017e7e5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f775222e4f0>]}
+[0m16:35:03.090116 [info ] [Thread-1  ]: 1 of 3 OK created sql view model dbt_russell.customers ......................... [[32mCREATE VIEW (0 processed)[0m in 1.25s]
+[0m16:35:03.090881 [debug] [Thread-1  ]: Finished running node model.coffee_shop.customers
+[0m16:35:04.707664 [debug] [Thread-2  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:5af2752a-b504-4a5d-874b-19c71a70973e:US&page=queryresults
+[0m16:35:04.709664 [debug] [Thread-2  ]: finished collecting timing info
+[0m16:35:04.710580 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f219fce4-b014-4a51-8686-6cdd017e7e5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f775222efa0>]}
+[0m16:35:04.711096 [info ] [Thread-2  ]: 2 of 3 OK created sql table model dbt_russell.my_first_dbt_model ............... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 2.87s]
+[0m16:35:04.711761 [debug] [Thread-2  ]: Finished running node model.coffee_shop.my_first_dbt_model
+[0m16:35:04.712981 [debug] [Thread-4  ]: Began running node model.coffee_shop.my_second_dbt_model
+[0m16:35:04.713425 [info ] [Thread-4  ]: 3 of 3 START sql view model dbt_russell.my_second_dbt_model .................... [RUN]
+[0m16:35:04.714529 [debug] [Thread-4  ]: Acquiring new bigquery connection "model.coffee_shop.my_second_dbt_model"
+[0m16:35:04.714778 [debug] [Thread-4  ]: Began compiling node model.coffee_shop.my_second_dbt_model
+[0m16:35:04.715009 [debug] [Thread-4  ]: Compiling model.coffee_shop.my_second_dbt_model
+[0m16:35:04.718965 [debug] [Thread-4  ]: Writing injected SQL for node "model.coffee_shop.my_second_dbt_model"
+[0m16:35:04.719387 [debug] [Thread-4  ]: finished collecting timing info
+[0m16:35:04.719649 [debug] [Thread-4  ]: Began executing node model.coffee_shop.my_second_dbt_model
+[0m16:35:04.724042 [debug] [Thread-4  ]: Writing runtime sql for node "model.coffee_shop.my_second_dbt_model"
+[0m16:35:04.724487 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m16:35:04.724790 [debug] [Thread-4  ]: On model.coffee_shop.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.3.2", "profile_name": "coffee_shop_russell", "target_name": "dev", "node_id": "model.coffee_shop.my_second_dbt_model"} */
+
+
+  create or replace view `aec-students`.`dbt_russell`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `aec-students`.`dbt_russell`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m16:35:05.570081 [debug] [Thread-4  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:d2704206-5dfb-42d5-a5cf-95766dfbafdf:US&page=queryresults
+[0m16:35:05.572138 [debug] [Thread-4  ]: finished collecting timing info
+[0m16:35:05.573000 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f219fce4-b014-4a51-8686-6cdd017e7e5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7750439c70>]}
+[0m16:35:05.573517 [info ] [Thread-4  ]: 3 of 3 OK created sql view model dbt_russell.my_second_dbt_model ............... [[32mCREATE VIEW (0 processed)[0m in 0.86s]
+[0m16:35:05.574183 [debug] [Thread-4  ]: Finished running node model.coffee_shop.my_second_dbt_model
+[0m16:35:05.576579 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m16:35:05.577262 [info ] [MainThread]: 
+[0m16:35:05.577645 [info ] [MainThread]: Finished running 2 view models, 1 table model in 0 hours 0 minutes and 6.35 seconds (6.35s).
+[0m16:35:05.578736 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:35:05.579105 [debug] [MainThread]: Connection 'model.coffee_shop.customers' was properly closed.
+[0m16:35:05.579632 [debug] [MainThread]: Connection 'model.coffee_shop.my_first_dbt_model' was properly closed.
+[0m16:35:05.580236 [debug] [MainThread]: Connection 'model.coffee_shop.my_second_dbt_model' was properly closed.
+[0m16:35:05.590747 [info ] [MainThread]: 
+[0m16:35:05.591265 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:35:05.591832 [info ] [MainThread]: 
+[0m16:35:05.592323 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m16:35:05.593519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7755066a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7752219850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f775217f550>]}
+[0m16:35:05.593872 [debug] [MainThread]: Flushing usage events
